@@ -18,7 +18,8 @@ def main ():
     XtXinv = np.linalg.inv(XtX)
     XtY = np.matrix.dot(Xt,y)
     beta = np.matrix.dot(XtXinv,XtY)
-    print beta
+    to_print = " ".join(list(map(lambda b: str(b), beta)))
+    print(to_print)
 
 
 
